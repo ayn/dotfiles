@@ -6,6 +6,8 @@ alias ls="ls -F"
 alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
+alias lal='ls -alFh'
+alias lt='ls -ltrh'
 
 # git
 alias gl='git pull'
@@ -15,7 +17,7 @@ alias gc='git commit'
 alias gca='git commit -a'
 alias gco='git checkout'
 alias gb='git branch'
-alias gs='git status'
+alias gst='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
@@ -28,6 +30,12 @@ alias tlog='tail -f log/development.log'
 alias scaffold='script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt'
+
+# ayn
+alias ec2='ssh andrewng.com'
+alias pass='passenger start -a 127.0.0.1 -p 3000 -d'
+alias tlog='tail -f log/development.log'
+alias src='source ~/.zshrc'
 
 # commands starting with % for pasting from web
 alias %=' '
