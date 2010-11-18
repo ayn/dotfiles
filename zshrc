@@ -18,6 +18,7 @@ export ZSH_THEME="lukerandall"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(vi-mode git github osx rails textmate ruby brew cap)
 
-source $ZSH/oh-my-zsh.sh
+fpath=(~/.zsh/Completion $fpath)
 
-# Customize to your needs...
+source $ZSH/oh-my-zsh.sh
+source $HOME/.rvm/scripts/rvm

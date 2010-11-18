@@ -8,4 +8,5 @@ alias src='source ~/.zshrc'
 alias tlog='tail -f log/development.log'
 alias srd='screen -r -d'
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
+c(){ cd ~/work/$1 }
 export EDITOR='vim'
