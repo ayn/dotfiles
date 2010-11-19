@@ -6,6 +6,7 @@ alias pass='passenger start -a 127.0.0.1 -p 3000 -d'
 alias rst='touch tmp/restart.txt'
 alias src='source ~/.zshrc'
 alias tlog='tail -f log/development.log'
+alias sc3='rails console'
 alias srd='screen -r -d'
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 c(){ cd ~/work/$1 }
