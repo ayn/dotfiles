@@ -21,4 +21,5 @@ plugins=(vi-mode git github osx rails textmate ruby brew cap)
 fpath=(~/.zsh/Completion $fpath)
 
 source $ZSH/oh-my-zsh.sh
+unsetopt auto_name_dirs
 source $HOME/.rvm/scripts/rvm
