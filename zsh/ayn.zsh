@@ -13,3 +13,4 @@ alias tlog='tail -f log/development.log'
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 c(){ cd ~/work/$1 }
 export EDITOR='vim'
+export ARCHFLAGS="-arch x86_64"
