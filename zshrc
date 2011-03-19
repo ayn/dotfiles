@@ -16,9 +16,11 @@ export ZSH_THEME="lukerandall"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vi-mode git github osx rails textmate ruby brew cap)
+plugins=(vi-mode brew git github osx rails textmate ruby cap)
 
 fpath=(~/.zsh/Completion $fpath)
+
+path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
