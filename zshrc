@@ -20,7 +20,7 @@ plugins=(vi-mode brew git github osx rails textmate ruby cap)
 
 fpath=(~/.zsh/Completion $fpath)
 
-path=(/usr/local/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin)
+path=(/usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
