@@ -16,7 +16,7 @@ export ZSH_THEME="lukerandall"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(vi-mode brew git github osx rails textmate ruby cap)
+plugins=(brew bundler cap gem git git-flow github mate mysql node osx pow rails rails3 ruby rvm textmate vi-mode)
 
 fpath=(~/.zsh/Completion $fpath)
 
