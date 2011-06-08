@@ -13,6 +13,6 @@ alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framewor
 alias tlog='tail -f log/development.log'
 bo(){ EDITOR=mate bundle open $1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
-c(){ cd ~/work/$1 }
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
+bindkey -M vicmd '?' history-incremental-search-backward
