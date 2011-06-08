@@ -15,4 +15,5 @@ bo(){ EDITOR=mate bundle open $1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
+c(){ cd ~/work/$1 }
 bindkey -M vicmd '?' history-incremental-search-backward
