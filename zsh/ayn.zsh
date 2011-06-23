@@ -17,8 +17,8 @@ export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
 c(){ cd ~/work/$1 }
 # Search backwards and forwards with a pattern
-bindkey -M vicmd '?' history-incremental-search-backward
-bindkey -M vicmd '/' history-incremental-search-forward
+bindkey -M vicmd '?' history-incremental-pattern-search-backward
+bindkey -M vicmd '/' history-incremental-pattern-search-forward
 # set up for insert mode too
 bindkey -M viins '^R' history-incremental-pattern-search-backward
 bindkey -M viins '^F' history-incremental-pattern-search-forward
