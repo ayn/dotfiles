@@ -206,3 +206,8 @@ function! OpenURL()
 endfunction
 map <Leader>w :call OpenURL()<CR>
 
+" git prompt
+set statusline=%{GitBranchInfoString()}
+
+" disable cursor blinking
+set guicursor+=n-v-c:blinkon0
