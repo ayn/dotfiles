@@ -166,7 +166,7 @@ if executable("ack")
 endif
 
 " Color scheme
-" colorscheme vividchalk
+colorscheme xoria256
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -194,20 +194,36 @@ set tags=./tags;
 let g:fuf_splitPathMatching=1
 
 " Open URL
-command -bar -nargs=1 OpenURL :!open <args>
-function! OpenURL()
-  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
-  echo s:uri
-  if s:uri != ""
-	  exec "!open \"" . s:uri . "\""
-  else
-	  echo "No URI found in line."
-  endif
-endfunction
-map <Leader>w :call OpenURL()<CR>
+"command -bar -nargs=1 OpenURL :!open <args>
+"function! OpenURL()
+"  let s:uri = matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*')
+"  echo s:uri
+"  if s:uri != ""
+"	  exec "!open \"" . s:uri . "\""
+"  else
+"	  echo "No URI found in line."
+"  endif
+"endfunction
+"map <Leader>w :call OpenURL()<CR>
 
 " git prompt
-set statusline=%{GitBranchInfoString()}
+if has('statusline') 
+  set statusline=%<%f\  
+  set statusline+=%w%h%m%r  
+  set statusline+=%{fugitive#statusline()} 
+  "set statusline+=\ [%{&ff}/%Y]  
+  set statusline+=\ [%{getcwd()}] 
+  set statusline+=%=%-14.(Line:\ %l\ of\ %L\ [%p%%]\ -\ Col:\ %c%V%) 
+endif
 
 " disable cursor blinking
 set guicursor+=n-v-c:blinkon0
+
+" jumping to class
+set path+=/path/to/your/rails-application/app/**
+set path+=/path/to/your/rails-application/lib/**
+set suffixesadd=.rb
+set includeexpr+=substitute(v:fname,'s$','','g')
+
+" better font
+set guifont=AnonymousPro:h12
