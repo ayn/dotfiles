@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/rbates/code/artbeats'
-let g:netrw_dirhist_2='/Users/ayn/work/api.140proof.com'
-let g:netrw_dirhist_3='/Users/ayn/.vim'
