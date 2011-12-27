@@ -15,6 +15,9 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set t_Co=256
 
+" better font
+set gfn=Anonymous\ Pro:h12
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
@@ -31,6 +34,9 @@ endif
 
 " Switch wrap off for everything
 set nowrap
+
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -226,5 +232,3 @@ set path+=/path/to/your/rails-application/lib/**
 set suffixesadd=.rb
 set includeexpr+=substitute(v:fname,'s$','','g')
 
-" better font
-set guifont=AnonymousPro:h12
