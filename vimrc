@@ -147,6 +147,8 @@ au! BufRead,BufNewFile *.haml         setfiletype haml
 " No Help, please
 nmap <F1> <Esc>
 
+nmap <C-x><b> :buffers<CR>
+
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
 
@@ -238,3 +240,6 @@ nmap <C-Down> ]e
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
+
+" tidy css
+autocmd filetype css setlocal equalprg=csstidy\ -\ --silent=true
