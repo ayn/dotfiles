@@ -12,6 +12,7 @@ alias src='source ~/.zshrc'
 alias srd='screen -r -d'
 alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framework/Versions/A/Resources/gconsync --sync com.google.ContactSync'
 alias tlog='tail -f log/development.log'
+alias vi='mvim -v'
 bo(){ EDITOR=mvim bundle open $1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 export EDITOR='vim'
