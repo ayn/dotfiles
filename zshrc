@@ -20,7 +20,7 @@ plugins=(brew bundler cap gem git git-flow github mate mysql node osx pow rails 
 
 fpath=(~/.zsh/Completion $fpath)
 
-path=(/usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin)
+path=(/usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
