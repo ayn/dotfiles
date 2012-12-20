@@ -1,4 +1,5 @@
 alias be='bundle exec'
+alias cookall='knife cookbook upload -a'
 alias knife='nocorrect knife'
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
