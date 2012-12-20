@@ -1,4 +1,5 @@
 alias be='bundle exec'
+alias knife=’nocorrect knife’
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
 alias lt='ls -ltrh'
