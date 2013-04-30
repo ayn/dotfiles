@@ -1,6 +1,7 @@
 alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias gl='git pull --rebase'
 alias knife='nocorrect knife'
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
