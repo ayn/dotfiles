@@ -16,7 +16,6 @@ alias tlog='tail -f log/development.log'
 alias upcommon='bu common && gca -m "++common" && gp'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
 alias vi='mvim -v'
-bo(){ EDITOR=mvim bundle open $1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
