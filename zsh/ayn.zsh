@@ -3,6 +3,7 @@ alias cookall='knife cookbook upload -a'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 alias gl='git pull --rebase'
 alias knife='nocorrect knife'
+alias ansible='nocorrect ansible'
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
 alias lt='ls -ltrh'
@@ -19,6 +20,7 @@ alias vi='mvim -v'
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 export EDITOR='vim'
 export ARCHFLAGS="-arch x86_64"
+export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 c(){ cd ~/work/$1 }
 # Search backwards and forwards with a pattern
 bindkey -M vicmd '?' history-incremental-pattern-search-backward
