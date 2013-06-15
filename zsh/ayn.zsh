@@ -23,6 +23,7 @@ export ARCHFLAGS="-arch x86_64"
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 c(){ cd ~/work/$1 }
 # Search backwards and forwards with a pattern
+bindkey -v
 bindkey -M vicmd '?' history-incremental-pattern-search-backward
 bindkey -M vicmd '/' history-incremental-pattern-search-forward
 # set up for insert mode too
