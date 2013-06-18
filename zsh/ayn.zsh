@@ -1,6 +1,6 @@
 alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 alias gl='git pull --rebase'
 alias knife='nocorrect knife'
 alias ansible='nocorrect ansible'
