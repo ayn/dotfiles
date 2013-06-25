@@ -1,9 +1,9 @@
+alias ansible='nocorrect ansible'
 alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 alias gl='git pull --rebase'
 alias knife='nocorrect knife'
-alias ansible='nocorrect ansible'
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
 alias lt='ls -ltrh'
@@ -17,11 +17,15 @@ alias tlog='tail -f log/development.log'
 alias upcommon='bu common && gca -m "++common" && gp'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
 alias vi='mvim -v'
-grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
-export EDITOR='vim'
-export ARCHFLAGS="-arch x86_64"
+
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
+export ARCHFLAGS="-arch x86_64"
+export EDITOR='vim'
+
 c(){ cd ~/work/$1 }
+grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
+wi(){ whois -h geektools.com "$*" }
+
 # Search backwards and forwards with a pattern
 bindkey -v
 bindkey -M vicmd '?' history-incremental-pattern-search-backward
