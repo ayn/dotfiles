@@ -3,3 +3,10 @@ set gfn=Anonymous\ Pro:h14
 set guioptions-=T
 set guioptions-=rL
 set nonumber
+:nmap <silent> <leader>d <Plug>DashSearch
+let g:dash_map = {
+    \ 'ruby'       : 'rails',
+    \ 'python'     : 'python2',
+    \ 'javascript' : 'backbone'
+    \ }
+

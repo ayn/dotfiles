@@ -17,12 +17,12 @@ ZSH_THEME="gianu"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cap gem git git-flow github mate mysql node osx pow rails rails3 ruby rvm textmate vi-mode)
+plugins=(brew rvm bundler cap gem git git-flow github mate mysql node osx pow rails rails3 ruby textmate vi-mode)
 
 fpath=(~/.zsh/Completion $fpath)
 
 path=(/usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin)
 
+source $HOME/.rvm/scripts/rvm
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
-source $HOME/.rvm/scripts/rvm
