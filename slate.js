@@ -130,6 +130,15 @@ _.each(["top-left", "top-right", "bottom-left", "bottom-right"], function(dir, i
   });
 });
 
+slate.bind("c:ctrl,alt,cmd", function(win) {
+  win.doOperation(slate.operation("move", {
+    "x": "screenOriginX+screenSizeX/2-windowSizeX/2",
+    "y": "screenOriginY+screenSizeY/2-windowSizeY/2",
+    "width": "windowSizeX",
+    "height": "windowSizeY"
+  }));
+});
+
 slate.bind("left:ctrl,alt,cmd", function(win) {
   if (!win) {
     return;
