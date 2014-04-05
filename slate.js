@@ -193,3 +193,27 @@ slate.bind("up:ctrl,alt,cmd", function(win) {
 slate.bind("down:ctrl,alt,cmd", function(win) {
   win.doOperation(pushDown);
 });
+
+var handleSnapshot = function(op, name) {
+  return slate.operation(op, {
+    "name"  : name,
+    "save"  : true,
+    "delete": false
+  });
+};
+
+slate.bind("f1:ctrl,alt", function(win) {
+  win.doOperation(handleSnapshot("snapshot", "home"));
+});
+
+slate.bind("f1:ctrl,alt,shift", function(win) {
+  win.doOperation(handleSnapshot("activate-snapshot", "home"));
+});
+
+slate.bind("f2:ctrl,alt", function(win) {
+  win.doOperation(handleSnapshot("snapshot", "office"));
+});
+
+slate.bind("f2:ctrl,alt,shift", function(win) {
+  win.doOperation(handleSnapshot("activate-snapshot", "office"));
+});
