@@ -17,7 +17,7 @@ ZSH_THEME="gianu"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew rvm bundler cap gem git git-flow github mate mysql node osx pow rails ruby textmate vi-mode)
+plugins=(brew rvm bundler cap gem git git-flow github mate mysql node osx pow rails ruby textmate vi-mode mosh)
 
 fpath=(~/.zsh/Completion $fpath)
 
