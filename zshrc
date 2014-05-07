@@ -23,6 +23,6 @@ fpath=(~/.zsh/Completion $fpath)
 
 path=(/usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin)
 
-source $HOME/.rvm/scripts/rvm
 source $ZSH/oh-my-zsh.sh
+source $HOME/.rvm/scripts/rvm
 unsetopt auto_name_dirs
