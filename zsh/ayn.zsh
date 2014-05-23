@@ -61,3 +61,5 @@ function define_vim_wrappers()
 }
 
 define_vim_wrappers
+
+export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
