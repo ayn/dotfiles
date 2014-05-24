@@ -18,6 +18,7 @@ alias tlog='tail -f log/development.log'
 alias upcommon='bu common && gca -m "++common" && gp'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
 alias vi='mvim -v'
+alias riptags='be ripper-tags -R --exclude=assets --exclude=vendor'
 
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
