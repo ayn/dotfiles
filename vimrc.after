@@ -12,3 +12,5 @@ let g:dash_map = {
 if exists(":Tabularize")
   xmap <leader>t :Tabularize /:/r0c1l0<CR>
 endif
+
+set tabstop=2 shiftwidth=2 expandtab
