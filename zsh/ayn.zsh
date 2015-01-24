@@ -8,6 +8,8 @@ alias knife='nocorrect knife'
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
 alias lt='ls -ltrh'
+alias riptags='be ripper-tags -R --exclude=assets --exclude=vendor'
+alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData/*'
 alias rst='touch tmp/restart.txt'
 alias sc2='be ./script/console'
 alias sc='rails c'
@@ -18,7 +20,6 @@ alias tlog='tail -f log/development.log'
 alias upcommon='bu common && gca -m "++common" && gp'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
 alias vi='mvim -v'
-alias riptags='be ripper-tags -R --exclude=assets --exclude=vendor'
 
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
