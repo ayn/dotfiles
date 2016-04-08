@@ -3,6 +3,7 @@ alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 alias flushdns='sudo dscacheutil -flushcache'
+alias gca='git commit -v -a -S'
 alias gl='git pull --rebase'
 alias grom='git rebase origin/master'
 alias knife='nocorrect knife'
@@ -18,7 +19,6 @@ alias src='source ~/.zshrc'
 alias srd='screen -r -d'
 alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framework/Versions/A/Resources/gconsync --sync com.google.ContactSync'
 alias tlog='tail -f log/development.log'
-alias upcommon='bu common && gca -m "++common" && gp'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
 alias vi='mvim -v'
 
@@ -43,6 +43,7 @@ fi
 bindkey -v
 bindkey -M vicmd '?' history-incremental-pattern-search-backward
 bindkey -M vicmd '/' history-incremental-pattern-search-forward
+
 # set up for insert mode too
 bindkey -M viins '^P' history-incremental-pattern-search-backward
 bindkey -M viins '^N' history-incremental-pattern-search-forward
