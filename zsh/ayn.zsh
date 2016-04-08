@@ -30,7 +30,6 @@ c(){ cd ~/work/$1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 wi(){ whois -h geektools.com "$*" }
 
-
 # Predictable SSH authentication socket location.
 SOCK="/tmp/ssh-agent-$USER-screen"
 if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
