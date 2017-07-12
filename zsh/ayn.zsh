@@ -24,6 +24,7 @@ alias vi='mvim -v'
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
 export EDITOR='vim'
+export ICLOUD=~/Library/Mobile\ Documents/com~apple~CloudDocs/
 
 c(){ cd ~/work/$1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
