@@ -31,4 +31,3 @@ unsetopt auto_name_dirs
 export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 
 eval "$(rbenv init -)"
-
