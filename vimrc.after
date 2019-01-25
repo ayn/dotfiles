@@ -1,5 +1,4 @@
 colorscheme railscasts
-set gfn=Anonymous\ Pro:h14
 set guioptions-=T
 set guioptions-=rL
 set nonumber
@@ -14,3 +13,4 @@ if exists(":Tabularize")
 endif
 
 set tabstop=2 shiftwidth=2 expandtab
+set gfn=AnonymousPro:h15
