@@ -18,7 +18,7 @@ export ZSH_CUSTOM=$HOME/.zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rbenv bundler cap gem git git-flow github mate mysql node osx pow rails ruby textmate vi-mode mosh)
+plugins=(rbenv bundler cap gem git git-flow github mate mysql node osx pow rails ruby textmate vi-mode mosh gpg-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 
