@@ -1,8 +1,13 @@
 [user]
 	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
 	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+	signingkey = BED8E8829BFC594C
 [alias]
 	co = checkout
+	ctags = !.git/hooks/ctags
+  ignore = update-index --assume-unchanged
+  unignore = update-index --no-assume-unchanged
+  ignored = !git ls-files -v | grep "^[[:lower:]]"
 [color]
 	diff = auto
 	status = auto
@@ -18,3 +23,12 @@
 [github]
 	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
 	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
