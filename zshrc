@@ -16,7 +16,7 @@ export ZSH_CUSTOM=$HOME/.zsh
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(rbenv bundler cap gem git git-flow github mate mysql node osx pow rails ruby textmate vi-mode mosh gpg-agent)
+plugins=(rbenv bundler gem git git-flow github node osx pow rails ruby vi-mode mosh gpg-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 path=(/usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
@@ -27,3 +27,4 @@ unsetopt auto_name_dirs
 export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 
 eval "$(rbenv init -)"
+. "/Users/ayn/.acme.sh/acme.sh.env"

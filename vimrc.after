@@ -12,5 +12,4 @@ if exists(":Tabularize")
   xmap <leader>t :Tabularize /:/r0c1l0<CR>
 endif
 
-set tabstop=2 shiftwidth=2 expandtab
-set gfn=AnonymousPro:h15
+set tabstop=20 shiftwidth=2 expandtab
