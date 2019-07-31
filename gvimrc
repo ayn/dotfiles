@@ -3,4 +3,4 @@ set lines=55 columns=100
 
 colorscheme railscasts
 
-set guifont=AnonymousPro:h15
+set guifont=AnonymousPro:h14
