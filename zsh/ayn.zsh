@@ -19,7 +19,9 @@ alias srd='screen -r -d'
 alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framework/Versions/A/Resources/gconsync --sync com.google.ContactSync'
 alias tlog='tail -f log/development.log'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
-alias vi='mvim -v'
+#alias vi='mvim -v'
+alias python='/usr/local/bin/python3'
+alias pip='pip3'
 
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
@@ -29,6 +31,12 @@ export ICLOUD=~/Library/Mobile\ Documents/com~apple~CloudDocs/
 c(){ cd ~/work/$1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
 wi(){ whois -h geektools.com "$*" }
+
+# iTrackBites
+itb_prod() {
+  local private_dns_name=$(aws ec2 describe-instances --profile itrackbites --filters 'Name=tag:Name,Values="Prod (codedeploy)"' --query 'Reservations[0].Instances[0].PrivateDnsName' --output text)
+  ssh -oStrictHostKeyChecking=accept-new -Jitrackbites-dev $private_dns_name -lubuntu
+}
 
 # Predictable SSH authentication socket location.
 SOCK="/tmp/ssh-agent-$USER-screen"
