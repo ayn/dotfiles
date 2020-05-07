@@ -16,7 +16,7 @@ export ZSH_CUSTOM=$HOME/.zsh
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(rbenv bundler gem git git-flow github node osx pow ruby vi-mode mosh gpg-agent tmux)
+plugins=(rbenv bundler gem git git-flow github node osx pow ruby vi-mode mosh gpg-agent tmux ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
