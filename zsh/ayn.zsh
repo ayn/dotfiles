@@ -2,12 +2,13 @@
 alias ansible='nocorrect ansible'
 alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
-alias dev='ssh -t itb-dev "tmux a -t ayn"'
 alias devmosh='mosh itb-dev -- tmux a -t ayn'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 alias flushdns='sudo dscacheutil -flushcache'
 alias gl='git pull --rebase'
 alias grom='git rebase origin/master'
+alias itb_dash='ssh -t itb-dashboard "tmux a -t ayn"'
+alias itb_dev='ssh -t itb-dev "tmux a -t ayn"'
 alias knife='nocorrect knife'
 alias lal='ls -alFh'
 alias llspec='rake "parallel:spec[4]"'
@@ -78,4 +79,4 @@ define_vim_wrappers
 
 #export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
 
-#source /usr/local/lib/sga-env.sh
+# source /usr/local/lib/sga-env.sh
