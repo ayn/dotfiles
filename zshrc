@@ -19,7 +19,8 @@ export ZSH_CUSTOM=$HOME/.zsh
 plugins=(chruby bundler gem git git-flow git-open github node osx pow ruby vi-mode mosh gpg-agent tmux) # ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
-path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /opt/homebrew/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
+#path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /opt/homebrew/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
+path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
@@ -31,7 +32,7 @@ if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
 fi
 
 # chruby omz plugin doesn't load properly on M1 Mac rn
-if [[ -d "/opt/homebrew/opt/chruby" ]]; then
-  source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-  source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-fi
+#if [[ -d "/opt/homebrew/opt/chruby" ]]; then
+#  source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+#  source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+#fi
