@@ -19,8 +19,21 @@ export ZSH_CUSTOM=$HOME/.zsh
 plugins=(chruby bundler gem git git-flow git-open github node osx pow ruby vi-mode mosh gpg-agent tmux) # ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
-#path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /opt/homebrew/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
-path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
+
+arch_name="$(uname -m)"
+
+if [ "${arch_name}" = "x86_64" ]; then
+  # if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
+  #   # Running on Rosetta 2
+  # else
+  #   # Running on native Intel
+  # fi
+
+  path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
+elif [ "${arch_name}" = "arm64" ]; then
+  echo "running on arm"
+  path=(/usr/local/opt/gnu-sed/libexec/gnubin /opt/homebrew/bin /usr/bin /bin /usr/sbin /sbin ~/bin)
+fi
 
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
