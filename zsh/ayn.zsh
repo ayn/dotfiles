@@ -21,7 +21,7 @@ alias rst='touch tmp/restart.txt'
 alias sc2='be ./script/console'
 alias sc='rails c'
 alias simgif='ffmpeg -i ~/Desktop/sim_screencast.mov -vf scale=960:-1 -r 6 -f gif -y ~/Desktop/sim_screencast.gif'
-alias simrecord='xcrun simctl io booted recordVideo --codec=h264 ~/Desktop/sim_screencast.mov'
+alias simrecord='xcrun simctl io booted recordVideo --codec=h264 -f ~/Desktop/sim_screencast.mov'
 alias src='source ~/.zshrc'
 alias srd='screen -r -d'
 alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framework/Versions/A/Resources/gconsync --sync com.google.ContactSync'
@@ -75,6 +75,11 @@ function define_vim_wrappers()
       eval "function ${cmd} () { (unset GEM_HOME; unset GEM_PATH; $cmd_path \$@) }"
     fi
   done
+}
+
+function seecert () {
+  nslookup $1
+  (openssl s_client -showcerts -servername $1 -connect $1:443 <<< "Q" | openssl x509 -text | grep -iA2 "Validity")
 }
 
 define_vim_wrappers
