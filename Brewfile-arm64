@@ -39,6 +39,7 @@ brew "jq"
 brew "libpq"
 brew "libyaml"
 brew "macvim"
+brew "mas"
 brew "mint"
 brew "mosh"
 brew "mysql-client"
@@ -64,3 +65,27 @@ brew "heroku/brew/heroku"
 brew "theseal/guardian-agent/guardian-agent"
 cask "launchcontrol"
 cask "ngrok"
+mas "Bear", id: 1091189122
+mas "Cardhop", id: 1290358394
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
+mas "Deliveries", id: 290986013
+mas "Fantastical", id: 975937182
+mas "Ghostery Lite", id: 1436953057
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Messenger", id: 1480068668
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
+mas "Slack", id: 803453959
+mas "Soulver 3", id: 1508732804
+mas "Spark", id: 1176895641
+mas "Speedtest", id: 1153157709
+mas "Telegram", id: 747648890
+mas "Things", id: 904280696
+mas "Tweetbot", id: 1384080005
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
+mas "zPerf", id: 483498361
