@@ -16,7 +16,7 @@ export ZSH_CUSTOM=$HOME/.zsh
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(chruby bundler gem git git-flow git-open github node osx pow ruby vi-mode mosh gpg-agent tmux) # ssh-agent)
+plugins=(chruby bundler gem git git-flow git-open github node osx pow ruby vi-mode mosh gpg-agent tmux golang) # ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 
@@ -28,8 +28,8 @@ if [ "${arch_name}" = "x86_64" ]; then
   # else
   #   # Running on native Intel
   # fi
-
-  path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin)
+  export GOPATH=$HOME/go
+  path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin $GOPATH/bin)
 elif [ "${arch_name}" = "arm64" ]; then
   echo "running on arm"
   path=(/usr/local/opt/gnu-sed/libexec/gnubin /opt/homebrew/bin /usr/bin /bin /usr/sbin /sbin ~/bin)
