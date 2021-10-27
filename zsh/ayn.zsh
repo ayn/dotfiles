@@ -2,6 +2,7 @@
 alias ansible='nocorrect ansible'
 alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
+alias delayedshot='screencapture -C -T5 Desktop/ScreenCap.png'
 alias devmosh='mosh itb-dev -- tmux a -t ayn'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 alias flushdns='sudo dscacheutil -flushcache'

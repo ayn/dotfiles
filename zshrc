@@ -16,7 +16,7 @@ export ZSH_CUSTOM=$HOME/.zsh
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(chruby bundler gem git git-flow git-open github node osx pow ruby vi-mode mosh gpg-agent tmux golang) # ssh-agent)
+plugins=(chruby bundler gem git git-flow git-open github node osx pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 
