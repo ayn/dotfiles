@@ -23,13 +23,15 @@ fpath=(~/.zsh/Completion $fpath)
 arch_name="$(uname -m)"
 
 if [ "${arch_name}" = "x86_64" ]; then
-  # if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
-  #   # Running on Rosetta 2
-  # else
-  #   # Running on native Intel
-  # fi
+  if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
+    # Running on Rosetta 2
+    echo "running on Rosetta 2"
+  else
+    # Running on native Intel
+    echo "running on x86"
+  fi
   export GOPATH=$HOME/go
-  path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin $GOPATH/bin)
+  path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin $GOPATH/bin)
 elif [ "${arch_name}" = "arm64" ]; then
   echo "running on arm"
   path=(/usr/local/opt/gnu-sed/libexec/gnubin /opt/homebrew/bin /usr/bin /bin /usr/sbin /sbin ~/bin)
