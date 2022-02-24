@@ -41,7 +41,7 @@ wi(){ whois -h geektools.com "$*" }
 # iTrackBites
 itb_prod() {
   local private_dns_name=$(aws ec2 describe-instances --profile itrackbites --filters 'Name=tag:Name,Values="Prod (codedeploy)"' --query 'Reservations[0].Instances[0].PrivateDnsName' --output text)
-  ssh -oStrictHostKeyChecking=accept-new -oUserKnownHostsFile=/dev/null -Jitb-gateway $private_dns_name -lubuntu
+  ssh -oStrictHostKeyChecking=accept-new -oUserKnownHostsFile=/dev/null -Jitb-bastion $private_dns_name -lubuntu
 }
 
 # Predictable SSH authentication socket location.
