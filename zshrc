@@ -5,6 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="gianu"
 export ZSH_CUSTOM=$HOME/.zsh
+export NVM_LAZY_LOAD=true
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
