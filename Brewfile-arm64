@@ -4,23 +4,23 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "kkevinm/itunes-discord-rp"
 tap "theseal/guardian-agent"
 tap "theseal/ssh-askpass"
-tap "kkevinm/itunes-discord-rp"
 brew "ack"
-brew "webp"
-brew "openssl@1.1"
 brew "automake"
 brew "gdbm"
+brew "openssl@1.1"
 brew "readline"
 brew "awscli"
 brew "bison"
 brew "brew-cask-completion"
 brew "libffi"
 brew "carthage"
-brew "chruby"
+brew "chruby", args: ["HEAD"]
 brew "colordiff"
 brew "ctags"
+brew "ddclient", restart_service: true
 brew "dos2unix"
 brew "exiftool"
 brew "ffmpeg"
@@ -42,7 +42,6 @@ brew "libyaml"
 brew "macvim"
 brew "mas"
 brew "mint"
-brew "mono"
 brew "mosh"
 brew "mysql-client"
 brew "nginx"
@@ -72,22 +71,27 @@ brew "heroku/brew/heroku"
 brew "theseal/guardian-agent/guardian-agent"
 cask "launchcontrol"
 cask "ngrok"
+cask "rectangle"
 cask "xcodes"
+mas "1Password for Safari", id: 1569813296
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
+mas "Capital One Shopping", id: 1477110326
 mas "Cardhop", id: 1290358394
 mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 290986013
+mas "DevCleaner", id: 1388020431
 mas "Fantastical", id: 975937182
-mas "Ghostery Lite", id: 1436953057
+mas "GarageBand", id: 682658836
+mas "Ghostery – Privacy Ad Blocker", id: 1436953057
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Messenger", id: 1480068668
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Pixelmator", id: 407963104
+mas "Pixelmator Pro", id: 1289583905
 mas "Pocket", id: 568494494
 mas "Priime Styles", id: 1089627601
 mas "Rakuten Cash Back", id: 1451893560
