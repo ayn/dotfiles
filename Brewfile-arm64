@@ -20,7 +20,6 @@ brew "carthage"
 brew "chruby", args: ["HEAD"]
 brew "colordiff"
 brew "ctags"
-brew "ddclient", restart_service: true
 brew "dos2unix"
 brew "exiftool"
 brew "ffmpeg"
@@ -48,6 +47,7 @@ brew "nginx"
 brew "nmap"
 brew "node"
 brew "nvm"
+brew "nzbget", restart_service: true
 brew "openssl@3"
 brew "p7zip"
 brew "pidof"
@@ -70,8 +70,11 @@ brew "zsh"
 brew "heroku/brew/heroku"
 brew "theseal/guardian-agent/guardian-agent"
 cask "launchcontrol"
+cask "mono-mdk"
 cask "ngrok"
+cask "plex-media-server"
 cask "rectangle"
+cask "sonarr"
 cask "xcodes"
 mas "1Password for Safari", id: 1569813296
 mas "AutoMounter", id: 1160435653
