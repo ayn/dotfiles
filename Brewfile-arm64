@@ -6,20 +6,21 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "theseal/guardian-agent"
 tap "theseal/ssh-askpass"
+tap "kkevinm/itunes-discord-rp"
 brew "ack"
+brew "webp"
+brew "openssl@1.1"
 brew "automake"
 brew "gdbm"
-brew "openssl@1.1"
 brew "readline"
 brew "awscli"
 brew "bison"
 brew "brew-cask-completion"
 brew "libffi"
 brew "carthage"
-brew "chruby", args: ["HEAD"]
+brew "chruby"
 brew "colordiff"
 brew "ctags"
-brew "ddclient", restart_service: true
 brew "dos2unix"
 brew "exiftool"
 brew "ffmpeg"
@@ -41,20 +42,26 @@ brew "libyaml"
 brew "macvim"
 brew "mas"
 brew "mint"
+brew "mono"
 brew "mosh"
 brew "mysql-client"
+brew "nginx"
 brew "nmap"
 brew "node"
+brew "nvm"
+brew "openssl@3"
+brew "p7zip"
 brew "pidof"
 brew "pinentry-mac"
 brew "postgresql"
 brew "pstree"
+brew "python@3.8"
 brew "ruby-build"
 brew "ruby-install"
 brew "smartmontools"
 brew "socat"
 brew "speedtest-cli"
-brew "ssh-copy-id"
+brew "ssh-copy-id", link: true
 brew "swiftlint"
 brew "terminal-notifier"
 brew "tmux"
@@ -65,6 +72,8 @@ brew "heroku/brew/heroku"
 brew "theseal/guardian-agent/guardian-agent"
 cask "launchcontrol"
 cask "ngrok"
+cask "xcodes"
+mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
 mas "Cardhop", id: 1290358394
 mas "DaisyDisk", id: 411643860
@@ -78,13 +87,18 @@ mas "LINE", id: 539883307
 mas "Messenger", id: 1480068668
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
+mas "Priime Styles", id: 1089627601
+mas "Rakuten Cash Back", id: 1451893560
+mas "Sequel Ace", id: 1518036000
 mas "Slack", id: 803453959
 mas "Soulver 3", id: 1508732804
 mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
 mas "Telegram", id: 747648890
 mas "Things", id: 904280696
+mas "ToothFairy", id: 1191449274
 mas "Tweetbot", id: 1384080005
 mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
