@@ -46,9 +46,3 @@ export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
   . "/Users/ayn/.acme.sh/acme.sh.env"
 fi
-
-# chruby omz plugin doesn't load properly on M1 Mac rn
-#if [[ -d "/opt/homebrew/opt/chruby" ]]; then
-#  source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-#  source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-#fi
