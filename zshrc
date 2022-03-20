@@ -34,7 +34,7 @@ if [ "${arch_name}" = "x86_64" ]; then
   export GOPATH=$HOME/go
   path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin $GOPATH/bin)
 elif [ "${arch_name}" = "arm64" ]; then
-  echo "running on arm"
+  #echo "running on arm"
   path=(/usr/local/opt/gnu-sed/libexec/gnubin /opt/homebrew/bin /usr/bin /bin /usr/sbin /sbin ~/bin)
 fi
 
