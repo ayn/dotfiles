@@ -17,7 +17,7 @@ export NVM_LAZY_LOAD=true
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(chruby bundler gem git git-flow git-open github node macos pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
+plugins=(1password chruby bundler gem git git-flow git-open github node macos pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 
@@ -35,7 +35,7 @@ if [ "${arch_name}" = "x86_64" ]; then
   path=(/usr/local/opt/gnu-sed/libexec/gnubin /usr/local/bin /usr/local/mysql/bin /usr/bin /bin /usr/sbin /sbin /usr/local/sbin /usr/X11/bin /usr/local/share/npm/bin ~/bin $GOPATH/bin)
 elif [ "${arch_name}" = "arm64" ]; then
   #echo "running on arm"
-  path=(/usr/local/opt/gnu-sed/libexec/gnubin /opt/homebrew/bin /usr/bin /bin /usr/sbin /sbin ~/bin)
+  path=(/usr/local/opt/gnu-sed/libexec/gnubin /opt/homebrew/bin /usr/local/bin /usr/bin /bin /usr/sbin /sbin ~/bin)
 fi
 
 source $ZSH/oh-my-zsh.sh
@@ -46,3 +46,6 @@ export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
 if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
   . "/Users/ayn/.acme.sh/acme.sh.env"
 fi
+
+# 1password completion
+eval "$(op completion zsh)"; compdef _op op
