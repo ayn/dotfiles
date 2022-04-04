@@ -56,6 +56,7 @@ brew "nvm"
 brew "nzbget", restart_service: true
 brew "openssl@3"
 brew "p7zip"
+brew "php@7.4"
 brew "pidof"
 brew "pinentry-mac"
 brew "postgresql"
