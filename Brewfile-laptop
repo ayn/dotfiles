@@ -1,0 +1,144 @@
+tap "1password/tap"
+tap "domt4/autoupdate"
+tap "heroku/brew"
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "jorgelbg/tap"
+tap "kkevinm/itunes-discord-rp"
+tap "theseal/guardian-agent"
+tap "theseal/ssh-askpass"
+brew "ack"
+brew "openssl@1.1"
+brew "automake"
+brew "gdbm"
+brew "readline"
+brew "awscli"
+brew "bison"
+brew "brew-cask-completion"
+brew "libffi"
+brew "carthage"
+brew "chruby", args: ["HEAD"]
+brew "colordiff"
+brew "ctags"
+brew "dos2unix"
+brew "exiftool"
+brew "ffmpeg"
+brew "gh"
+brew "git"
+brew "git-lfs"
+brew "git-open"
+brew "gnu-sed"
+brew "pinentry"
+brew "gnupg"
+brew "go"
+brew "gphoto2"
+brew "gradle"
+brew "htop"
+brew "ircii"
+brew "jq"
+brew "libpq"
+brew "libyaml"
+brew "macvim"
+brew "mas"
+brew "mint"
+brew "mosh"
+brew "mysql-client"
+brew "nmap"
+brew "node"
+brew "nvm"
+brew "openssl@3"
+brew "p7zip"
+brew "php@7.4"
+brew "pidof"
+brew "pinentry-mac"
+brew "postgresql"
+brew "pstree"
+brew "python@3.8"
+brew "ruby-build"
+brew "ruby-install"
+brew "smartmontools"
+brew "socat"
+brew "speedtest-cli"
+brew "ssh-copy-id", link: true
+brew "subversion"
+brew "swiftlint"
+brew "terminal-notifier"
+brew "tmux"
+brew "uptimed", restart_service: true
+brew "yarn"
+brew "zsh"
+brew "heroku/brew/heroku"
+brew "theseal/guardian-agent/guardian-agent"
+cask "1password-beta"
+cask "1password-cli"
+cask "alfred"
+cask "android-studio"
+cask "backblaze"
+cask "bartender"
+cask "brave-browser"
+cask "dash"
+cask "discord-ptb"
+cask "figma"
+cask "font-anonymous-pro"
+cask "font-fira-code"
+cask "font-hack"
+cask "font-meslo-lg"
+cask "font-source-code-pro"
+cask "garmin-express"
+cask "github"
+cask "istat-menus"
+cask "launchcontrol"
+cask "ledger-live"
+cask "lingon-x"
+cask "mono-mdk"
+cask "ngrok"
+cask "postman"
+cask "rectangle"
+cask "signal"
+cask "spotify"
+cask "superduper"
+cask "textexpander"
+cask "trezor-suite"
+cask "visual-studio-code"
+cask "vlc"
+cask "xcodes"
+mas "1Password for Safari", id: 1569813296
+mas "AutoMounter", id: 1160435653
+mas "Bear", id: 1091189122
+mas "Capital One Shopping", id: 1477110326
+mas "Cardhop", id: 1290358394
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
+mas "Deliveries", id: 290986013
+mas "DevCleaner", id: 1388020431
+mas "Fantastical", id: 975937182
+mas "GarageBand", id: 682658836
+mas "Ghostery – Privacy Ad Blocker", id: 1436953057
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Messenger", id: 1480068668
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 1289583905
+mas "Pocket", id: 568494494
+mas "Priime Styles", id: 1089627601
+mas "Rakuten Cash Back", id: 1451893560
+mas "Sequel Ace", id: 1518036000
+mas "Slack", id: 803453959
+mas "Soulver 3", id: 1508732804
+mas "Spark", id: 1176895641
+mas "Speedtest", id: 1153157709
+mas "Telegram", id: 747648890
+mas "Things", id: 904280696
+mas "ToothFairy", id: 1191449274
+mas "Tweetbot", id: 1384080005
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
+mas "zPerf", id: 483498361
