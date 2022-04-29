@@ -99,7 +99,6 @@ cask "font-source-code-pro"
 cask "garmin-express"
 cask "github"
 cask "istat-menus"
-cask "launchcontrol"
 cask "ledger-live"
 cask "lingon-x"
 cask "mono-mdk"
@@ -119,6 +118,7 @@ cask "trezor-suite"
 cask "visual-studio-code"
 cask "vlc"
 cask "xcodes"
+cask "xscope"
 mas "1Password for Safari", id: 1569813296
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
