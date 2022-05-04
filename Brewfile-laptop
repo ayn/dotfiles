@@ -15,20 +15,28 @@ tap "theseal/guardian-agent"
 tap "theseal/ssh-askpass"
 brew "ack"
 brew "openssl@1.1"
+brew "apr-util"
 brew "automake"
 brew "gdbm"
 brew "readline"
+brew "python@3.9"
 brew "awscli"
 brew "bison"
 brew "brew-cask-completion"
 brew "libffi"
+brew "glib"
 brew "carthage"
 brew "chruby", args: ["HEAD"]
 brew "colordiff"
 brew "ctags"
+brew "curl"
+brew "ddclient"
 brew "dos2unix"
 brew "exiftool"
+brew "gobject-introspection"
+brew "harfbuzz"
 brew "ffmpeg"
+brew "freetds"
 brew "gh"
 brew "git"
 brew "git-lfs"
@@ -44,6 +52,7 @@ brew "ircii"
 brew "jq"
 brew "libpq"
 brew "libyaml"
+brew "ruby"
 brew "macvim"
 brew "mas"
 brew "mint"
@@ -57,6 +66,7 @@ brew "p7zip"
 brew "php@7.4"
 brew "pidof"
 brew "pinentry-mac"
+brew "pipenv"
 brew "postgresql"
 brew "pstree"
 brew "python@3.8"
@@ -95,7 +105,6 @@ cask "font-source-code-pro"
 cask "garmin-express"
 cask "github"
 cask "istat-menus"
-cask "launchcontrol"
 cask "ledger-live"
 cask "lingon-x"
 cask "muzzle"
@@ -113,6 +122,7 @@ cask "vlc"
 cask "xcodes"
 cask "xscope"
 mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
 mas "Capital One Shopping", id: 1477110326
@@ -140,9 +150,11 @@ mas "Soulver 3", id: 1508732804
 mas "Spark", id: 1176895641
 mas "Speedtest", id: 1153157709
 mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
 mas "Things", id: 904280696
 mas "ToothFairy", id: 1191449274
 mas "Tweetbot", id: 1384080005
 mas "WhatsApp", id: 1147396723
+mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
 mas "zPerf", id: 483498361
