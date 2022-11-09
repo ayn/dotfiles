@@ -24,6 +24,7 @@ brew "brew-cask-completion"
 brew "libffi"
 brew "carthage"
 brew "chruby", args: ["HEAD"]
+brew "cli53"
 brew "colordiff"
 brew "ctags"
 brew "dos2unix"
@@ -59,7 +60,7 @@ brew "p7zip"
 brew "php@7.4", link: true
 brew "pidof"
 brew "pinentry-mac"
-brew "postgresql"
+brew "postgresql@14"
 brew "pstree"
 brew "python@3.8"
 brew "ruby-build"
@@ -74,6 +75,7 @@ brew "terminal-notifier"
 brew "tmux"
 brew "uptimed", restart_service: true
 brew "yarn"
+brew "youtube-dl"
 brew "zsh"
 brew "heroku/brew/heroku"
 brew "theseal/guardian-agent/guardian-agent"
@@ -121,6 +123,7 @@ cask "vlc"
 cask "xcodes"
 cask "xscope"
 mas "1Password for Safari", id: 1569813296
+mas "Apple Configurator", id: 1037126344
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
 mas "Capital One Shopping", id: 1477110326
@@ -129,6 +132,7 @@ mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 290986013
 mas "DevCleaner", id: 1388020431
+mas "Eno From Capital One", id: 1590422864
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "Ghostery – Privacy Ad Blocker", id: 1436953057
