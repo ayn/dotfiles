@@ -16,11 +16,11 @@ tap "theseal/ssh-askpass"
 brew "ack"
 brew "openssl@1.1"
 brew "automake"
-brew "gdbm"
 brew "readline"
 brew "awscli"
 brew "bison"
 brew "brew-cask-completion"
+brew "gdbm"
 brew "libffi"
 brew "carthage"
 brew "chruby", args: ["HEAD"]
@@ -74,6 +74,7 @@ brew "swiftlint"
 brew "terminal-notifier"
 brew "tmux"
 brew "uptimed", restart_service: true
+brew "vim", link: false
 brew "yarn"
 brew "youtube-dl"
 brew "zsh"
@@ -130,7 +131,6 @@ mas "Capital One Shopping", id: 1477110326
 mas "Cardhop", id: 1290358394
 mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
-mas "Deliveries", id: 290986013
 mas "DevCleaner", id: 1388020431
 mas "Eno From Capital One", id: 1590422864
 mas "Fantastical", id: 975937182
@@ -140,6 +140,7 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Messenger", id: 1480068668
+mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
@@ -156,5 +157,4 @@ mas "Things", id: 904280696
 mas "ToothFairy", id: 1191449274
 mas "Tweetbot", id: 1384080005
 mas "WhatsApp", id: 1147396723
-mas "Xcode", id: 497799835
 mas "zPerf", id: 483498361
