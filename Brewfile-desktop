@@ -126,6 +126,7 @@ cask "radarr"
 cask "rar"
 cask "raspberry-pi-imager"
 cask "rectangle"
+cask "session-manager-plugin"
 cask "signal"
 cask "sonarr"
 cask "spotify"
@@ -137,8 +138,8 @@ cask "visual-studio-code"
 cask "vlc"
 cask "xcodes"
 cask "xscope"
-mas "1Password for Safari", id: 1569813296
 mas "Apple Configurator", id: 1037126344
+mas "Auction Sniper for eBay", id: 608292802
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
 mas "Capital One Shopping", id: 1477110326
@@ -151,6 +152,7 @@ mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "Ghostery – Privacy Ad Blocker", id: 1436953057
 mas "iMovie", id: 408981434
+mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Messenger", id: 1480068668
