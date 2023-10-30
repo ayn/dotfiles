@@ -28,6 +28,7 @@ alias srd='screen -r -d'
 alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framework/Versions/A/Resources/gconsync --sync com.google.ContactSync'
 alias tlog='tail -f log/development.log'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
