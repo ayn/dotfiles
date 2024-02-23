@@ -1,4 +1,3 @@
-#alias vi='mvim -v'
 alias ansible='nocorrect ansible'
 alias be='bundle exec'
 alias cookall='knife cookbook upload -a'
@@ -26,9 +25,10 @@ alias simrecord='xcrun simctl io booted recordVideo --codec=h264 -f ~/Desktop/si
 alias src='source ~/.zshrc'
 alias srd='screen -r -d'
 alias synccontacts='/System/Library/PrivateFrameworks/GoogleContactSync.framework/Versions/A/Resources/gconsync --sync com.google.ContactSync'
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 alias tlog='tail -f log/development.log'
 alias uproles='find roles -type f -name \*.rb  -exec knife role from file {} \;'
-alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias vi='vim'
 
 export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
