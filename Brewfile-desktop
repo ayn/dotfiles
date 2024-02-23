@@ -21,6 +21,7 @@ brew "automake"
 brew "awscli"
 brew "bison"
 brew "brew-cask-completion"
+brew "btop"
 brew "carthage"
 brew "certbot", link: false
 brew "chruby", args: ["HEAD"]
@@ -57,7 +58,7 @@ brew "jq"
 brew "libffi"
 brew "libpq"
 brew "libyaml"
-brew "macvim", link: false
+brew "macvim"
 brew "mas"
 brew "mint"
 brew "mitmproxy"
@@ -88,7 +89,6 @@ brew "swiftlint"
 brew "terminal-notifier"
 brew "tmux"
 brew "uptimed", restart_service: true
-brew "vim"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
@@ -157,8 +157,11 @@ mas "Cardhop", id: 1290358394
 mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
 mas "DevCleaner", id: 1388020431
+mas "Disk Speed Test", id: 425264550
+mas "Draw Things", id: 6444050820
 mas "Eno From Capital One", id: 1590422864
 mas "Fantastical", id: 975937182
+mas "Flighty", id: 1358823008
 mas "GarageBand", id: 682658836
 mas "Ghostery – Privacy Ad Blocker", id: 1436953057
 mas "iMovie", id: 408981434
@@ -166,9 +169,12 @@ mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Messenger", id: 1480068668
+mas "Noir", id: 1592917505
 mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Paku", id: 1534130193
+mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
 mas "Pocket", id: 568494494
 mas "Priime Styles", id: 1089627601
