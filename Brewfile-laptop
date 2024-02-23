@@ -13,23 +13,25 @@ tap "stripe/stripe-cli"
 tap "theseal/guardian-agent"
 tap "theseal/ssh-askpass"
 brew "ack"
-brew "openssl@3"
-brew "openssl@1.1"
-brew "readline"
+brew "pycparser"
 brew "libyaml"
+brew "openssl@3"
 brew "ansible"
 brew "yamllint"
 brew "ansible-lint"
+brew "libtiff"
+brew "little-cms2"
+brew "webp"
+brew "jpeg-xl"
+brew "aom"
 brew "apr-util"
 brew "automake"
 brew "awscli"
 brew "bison"
 brew "bison@2.7"
 brew "brew-cask-completion"
-brew "gdbm"
 brew "glib"
-brew "libffi"
-brew "python@3.9"
+brew "cairo"
 brew "carthage"
 brew "chruby", args: ["HEAD"]
 brew "colordiff"
@@ -42,9 +44,14 @@ brew "gmp"
 brew "unbound"
 brew "gnutls"
 brew "harfbuzz"
+brew "leptonica"
 brew "libass"
+brew "tesseract"
 brew "ffmpeg"
 brew "freetds"
+brew "libavif"
+brew "gd"
+brew "gdbm"
 brew "gh"
 brew "git"
 brew "git-lfs"
@@ -55,14 +62,17 @@ brew "gnupg"
 brew "go"
 brew "gobject-introspection"
 brew "gotop"
+brew "libgphoto2"
 brew "gphoto2"
+brew "openjdk"
 brew "gradle"
 brew "guile"
 brew "htop"
 brew "ircii"
 brew "jq"
+brew "openssl@1.1"
 brew "jsonschema"
-brew "krb5"
+brew "libffi"
 brew "libfido2"
 brew "libpq"
 brew "macvim", link: false
@@ -74,7 +84,10 @@ brew "nghttp2"
 brew "nmap"
 brew "node"
 brew "nvm"
+brew "openjdk@11"
+brew "openjdk@17"
 brew "p7zip"
+brew "perl"
 brew "php@7.4"
 brew "pidof"
 brew "pinentry-mac"
@@ -84,6 +97,7 @@ brew "pstree"
 brew "python@3.10"
 brew "tcl-tk"
 brew "python@3.8"
+brew "python@3.9"
 brew "ruby-build"
 brew "ruby-install"
 brew "smartmontools"
@@ -116,14 +130,13 @@ cask "font-source-code-pro"
 cask "garmin-express"
 cask "launchcontrol"
 cask "lingon-x"
-cask "mono-mdk"
 cask "ngrok"
 cask "orion"
+cask "pibar"
 cask "rectangle"
 cask "superduper"
 cask "xcodes"
 cask "xscope"
-mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
@@ -134,15 +147,20 @@ mas "Day One", id: 1055511498
 mas "DevCleaner", id: 1388020431
 mas "Eno From Capital One", id: 1590422864
 mas "Fantastical", id: 975937182
+mas "Flighty", id: 1358823008
 mas "GarageBand", id: 682658836
 mas "Ghostery – Privacy Ad Blocker", id: 1436953057
+mas "Ice Cubes", id: 6444915884
 mas "iMovie", id: 408981434
+mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Messenger", id: 1480068668
+mas "Noir", id: 1592917505
 mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Paku", id: 1534130193
 mas "Pixelmator Pro", id: 1289583905
 mas "Pocket", id: 568494494
 mas "Priime Styles", id: 1089627601
@@ -158,6 +176,7 @@ mas "TestFlight", id: 899247664
 mas "Things", id: 904280696
 mas "ToothFairy", id: 1191449274
 mas "Tweetbot", id: 1384080005
+mas "Wavelength", id: 1584865627
 mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
