@@ -23,6 +23,8 @@ brew "bison"
 brew "brew-cask-completion"
 brew "btop"
 brew "carthage"
+brew "certifi"
+brew "cryptography"
 brew "certbot", link: false
 brew "chruby", args: ["HEAD"]
 brew "cli53"
@@ -70,9 +72,9 @@ brew "node"
 brew "nvm"
 brew "openssl@1.1"
 brew "nzbget", restart_service: true
+brew "oath-toolkit"
 brew "p7zip"
 brew "perl"
-brew "php@7.4", link: true
 brew "pidof"
 brew "pinentry-mac"
 brew "postgresql@14"
