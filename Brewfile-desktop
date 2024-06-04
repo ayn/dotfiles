@@ -113,7 +113,6 @@ cask "android-file-transfer"
 cask "android-studio"
 cask "arc"
 cask "backblaze"
-cask "bartender"
 cask "brave-browser"
 cask "copilot-for-xcode"
 cask "dash"
@@ -131,6 +130,8 @@ cask "iina"
 cask "inkscape"
 cask "inkstitch"
 cask "istat-menus"
+cask "iterm2"
+cask "jordanbaird-ice"
 cask "keka"
 cask "kindle"
 cask "ledger-live"
@@ -198,7 +199,6 @@ mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
-mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "ToothFairy", id: 1191449274
 mas "Wavelength", id: 1584865627
