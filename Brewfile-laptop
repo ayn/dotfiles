@@ -88,7 +88,6 @@ brew "openjdk@11"
 brew "openjdk@17"
 brew "p7zip"
 brew "perl"
-brew "php@7.4"
 brew "pidof"
 brew "pinentry-mac"
 brew "pipenv"
@@ -128,6 +127,7 @@ cask "font-hack"
 cask "font-meslo-lg"
 cask "font-source-code-pro"
 cask "garmin-express"
+cask "jordanbaird-ice"
 cask "launchcontrol"
 cask "lingon-x"
 cask "ngrok"
@@ -161,6 +161,7 @@ mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Paku", id: 1534130193
+mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
 mas "Pocket", id: 568494494
 mas "Priime Styles", id: 1089627601
