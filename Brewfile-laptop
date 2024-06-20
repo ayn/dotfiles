@@ -31,7 +31,7 @@ brew "bison@2.7"
 brew "brew-cask-completion"
 brew "gmp"
 brew "btop"
-brew "glib", link: false
+brew "glib"
 brew "cairo"
 brew "carthage"
 brew "chruby", args: ["HEAD"]
@@ -113,8 +113,6 @@ brew "yamllint"
 brew "yarn"
 brew "youtube-dl"
 brew "zsh"
-brew "heroku/brew/heroku"
-brew "stripe/stripe-cli/stripe"
 brew "theseal/guardian-agent/guardian-agent"
 cask "1password-cli"
 cask "android-file-transfer"
@@ -133,6 +131,7 @@ cask "lingon-x"
 cask "ngrok"
 cask "orion"
 cask "pibar"
+cask "spotify"
 cask "superduper"
 cask "xcodes"
 cask "xscope"
@@ -179,5 +178,4 @@ mas "Tweetbot", id: 1384080005
 mas "Wavelength", id: 1584865627
 mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025
-mas "Xcode", id: 497799835
 mas "zPerf", id: 483498361
