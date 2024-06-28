@@ -49,3 +49,6 @@ fi
 
 # 1password completion
 eval "$(op completion zsh)"; compdef _op op
+
+# Created by `pipx` on 2024-06-28 19:51:59
+export PATH="$PATH:/Users/ayn/.local/bin"
