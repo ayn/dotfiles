@@ -34,6 +34,8 @@ export ANSIBLE_HOSTS=~/Dropbox/Private/ansible_hosts
 export ARCHFLAGS="-arch x86_64"
 export EDITOR='vim'
 export ICLOUD=~/Library/Mobile\ Documents/com~apple~CloudDocs/
+export HASS_SERVER="op://Private/homeassistant/website"
+export HASS_TOKEN="op://Private/homeassistant/token"
 
 c(){ cd ~/work/$1 }
 grepall(){ find . -type f -print0 | xargs -0 grep -n "$@" }
