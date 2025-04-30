@@ -1,4 +1,5 @@
 tap "1password/tap"
+tap "bugsnag/tap"
 tap "domt4/autoupdate"
 tap "heroku/brew"
 tap "homebrew/autoupdate"
@@ -14,10 +15,14 @@ tap "kkevinm/itunes-discord-rp"
 tap "theseal/guardian-agent"
 tap "theseal/ssh-askpass"
 brew "ack"
-brew "jpeg-xl"
-brew "aom"
+brew "certifi"
+brew "xz"
+brew "libyaml"
 brew "openssl@3"
 brew "readline"
+brew "aider"
+brew "jpeg-xl"
+brew "aom"
 brew "automake"
 brew "cryptography"
 brew "awscli"
@@ -28,7 +33,6 @@ brew "blueutil"
 brew "brew-cask-completion"
 brew "btop"
 brew "carthage"
-brew "certifi"
 brew "certbot"
 brew "chruby", args: ["HEAD"]
 brew "cli53"
@@ -44,6 +48,7 @@ brew "leptonica"
 brew "ffmpeg"
 brew "flyctl"
 brew "fortune"
+brew "gallery-dl"
 brew "libavif"
 brew "gdbm"
 brew "gh"
@@ -62,8 +67,8 @@ brew "htop"
 brew "ircii"
 brew "jq"
 brew "libffi"
+brew "libidn"
 brew "libpq"
-brew "libyaml"
 brew "macvim"
 brew "mas"
 brew "mint"
@@ -75,7 +80,7 @@ brew "nginx"
 brew "nmap"
 brew "node"
 brew "nvm"
-brew "nzbget", restart_service: true
+brew "nzbget", restart_service: :changed
 brew "oath-toolkit"
 brew "openssl@1.1"
 brew "p7zip"
@@ -83,6 +88,7 @@ brew "perl"
 brew "pidof"
 brew "pinentry-mac"
 brew "pipx"
+brew "pkgconf"
 brew "postgresql@14"
 brew "pstree"
 brew "python@3.8"
@@ -97,12 +103,14 @@ brew "subversion"
 brew "swiftlint"
 brew "terminal-notifier"
 brew "tmux"
-brew "uptimed", restart_service: true
+brew "uptimed", restart_service: :changed
+brew "uv"
 brew "weechat"
 brew "wget"
 brew "yarn"
 brew "yt-dlp"
 brew "zsh"
+brew "bugsnag/tap/bugsnag-dsym-upload"
 brew "heroku/brew/heroku"
 brew "theseal/guardian-agent/guardian-agent"
 cask "1password-cli"
@@ -139,6 +147,7 @@ cask "keka"
 cask "kindle"
 cask "ledger-live"
 cask "lingon-x"
+cask "megasync"
 cask "mono-mdk"
 cask "muzzle"
 cask "ngrok"
@@ -152,6 +161,7 @@ cask "radarr"
 cask "rar"
 cask "raspberry-pi-imager"
 cask "rectangle"
+cask "resilio-sync"
 cask "session-manager-plugin"
 cask "signal"
 cask "signal@beta"
@@ -164,16 +174,17 @@ cask "visual-studio-code"
 cask "vlc"
 cask "xcodes"
 cask "xscope"
+mas "1Password for Safari", id: 0
 mas "Apple Configurator", id: 1037126344
 mas "Auction Sniper for eBay", id: 608292802
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
+mas "Blackmagic Disk Speed Test", id: 425264550
 mas "Capital One Shopping", id: 1477110326
 mas "Cardhop", id: 1290358394
 mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
 mas "DevCleaner", id: 1388020431
-mas "Disk Speed Test", id: 425264550
 mas "Draw Things", id: 6444050820
 mas "Eno From Capital One", id: 1590422864
 mas "Fantastical", id: 975937182
@@ -203,10 +214,11 @@ mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
+mas "The Camelizer", id: 1532579087
 mas "Things", id: 904280696
 mas "ToothFairy", id: 1191449274
 mas "Wavelength", id: 1584865627
-mas "WhatsApp", id: 1147396723
+mas "WhatsApp (old)", id: 1147396723
 mas "zPerf", id: 483498361
 vscode "dbaeumer.vscode-eslint"
 vscode "github.copilot"
