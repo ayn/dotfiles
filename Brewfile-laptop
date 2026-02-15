@@ -3,9 +3,6 @@ tap "domt4/autoupdate"
 tap "heroku/brew"
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "jorgelbg/tap"
 tap "kkevinm/itunes-discord-rp"
@@ -20,16 +17,15 @@ brew "ansible"
 brew "ansible-lint"
 brew "libtiff"
 brew "little-cms2"
-brew "webp"
 brew "jpeg-xl"
 brew "aom"
 brew "apr-util"
 brew "automake"
+brew "python@3.13"
 brew "awscli"
 brew "bison"
 brew "bison@2.7"
 brew "brew-cask-completion"
-brew "gmp"
 brew "btop"
 brew "glib"
 brew "cairo"
@@ -41,22 +37,20 @@ brew "curl"
 brew "ddclient"
 brew "dos2unix"
 brew "exiftool"
-brew "unbound"
-brew "gnutls"
-brew "harfbuzz"
-brew "leptonica"
-brew "libass"
-brew "tesseract"
 brew "ffmpeg"
 brew "freetds"
 brew "libavif"
+brew "webp"
 brew "gd"
 brew "gdbm"
 brew "gh"
 brew "git"
 brew "git-lfs"
 brew "git-open"
+brew "gmp"
 brew "gnu-sed"
+brew "unbound"
+brew "gnutls"
 brew "pinentry"
 brew "gnupg"
 brew "go"
@@ -64,6 +58,7 @@ brew "gobject-introspection"
 brew "gotop"
 brew "libgphoto2"
 brew "gphoto2"
+brew "harfbuzz"
 brew "openjdk"
 brew "gradle"
 brew "guile"
@@ -72,6 +67,8 @@ brew "ircii"
 brew "jq"
 brew "openssl@1.1"
 brew "jsonschema"
+brew "leptonica"
+brew "libass"
 brew "libffi"
 brew "libfido2"
 brew "libpq"
@@ -91,11 +88,9 @@ brew "perl"
 brew "pidof"
 brew "pinentry-mac"
 brew "pipenv"
-brew "postgresql@14", restart_service: true
+brew "postgresql@14", restart_service: :changed
 brew "pstree"
 brew "python@3.10"
-brew "tcl-tk"
-brew "python@3.8"
 brew "python@3.9"
 brew "ruby-build"
 brew "ruby-install"
@@ -105,10 +100,13 @@ brew "speedtest-cli"
 brew "ssh-copy-id", link: true
 brew "subversion"
 brew "swiftlint"
+brew "tcl-tk"
 brew "terminal-notifier"
+brew "tesseract"
 brew "tmux"
+brew "transmission-cli"
 brew "unar"
-brew "uptimed", restart_service: true
+brew "uptimed", restart_service: :changed
 brew "yamllint"
 brew "yarn"
 brew "youtube-dl"
@@ -118,6 +116,9 @@ cask "1password-cli"
 cask "android-file-transfer"
 cask "android-studio"
 cask "backblaze"
+cask "capcut"
+cask "chatgpt"
+cask "claude-code"
 cask "dash"
 cask "discord"
 cask "font-fira-code"
@@ -125,21 +126,28 @@ cask "font-hack"
 cask "font-meslo-lg"
 cask "font-source-code-pro"
 cask "garmin-express"
+cask "iina"
 cask "jordanbaird-ice"
 cask "launchcontrol"
 cask "lingon-x"
 cask "ngrok"
 cask "orion"
 cask "pibar"
+cask "raspberry-pi-imager"
 cask "spotify"
 cask "superduper"
-cask "xcodes"
+cask "transmission"
+cask "trezor-suite"
+cask "visual-studio-code"
+cask "xcodes-app"
 cask "xscope"
+mas "1Password for Safari", id: 0
 mas "Amphetamine", id: 937984704
 mas "AutoMounter", id: 1160435653
 mas "Bear", id: 1091189122
 mas "Capital One Shopping", id: 1477110326
 mas "Cardhop", id: 1290358394
+mas "Clic", id: 6451395577
 mas "DaisyDisk", id: 411643860
 mas "Day One", id: 1055511498
 mas "DevCleaner", id: 1388020431
@@ -147,8 +155,9 @@ mas "Eno From Capital One", id: 1590422864
 mas "Fantastical", id: 975937182
 mas "Flighty", id: 1358823008
 mas "GarageBand", id: 682658836
-mas "Ghostery – Privacy Ad Blocker", id: 1436953057
-mas "Ice Cubes", id: 6444915884
+mas "GhosteryLite", id: 1436953057
+mas "Home Assistant", id: 1099568401
+mas "IceCubesApp", id: 6444915884
 mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
@@ -172,10 +181,10 @@ mas "Speedtest", id: 1153157709
 mas "Tailscale", id: 1475387142
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
+mas "The Camelizer", id: 1532579087
 mas "Things", id: 904280696
 mas "ToothFairy", id: 1191449274
 mas "Tweetbot", id: 1384080005
 mas "Wavelength", id: 1584865627
-mas "WhatsApp", id: 1147396723
 mas "WireGuard", id: 1451685025
 mas "zPerf", id: 483498361
