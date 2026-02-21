@@ -107,6 +107,7 @@ brew "tmux"
 brew "transmission-cli"
 brew "unar"
 brew "uptimed", restart_service: :changed
+brew "xcodes", link: false
 brew "yamllint"
 brew "yarn"
 brew "youtube-dl"
