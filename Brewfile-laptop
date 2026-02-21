@@ -112,6 +112,7 @@ brew "yarn"
 brew "youtube-dl"
 brew "zsh"
 brew "theseal/guardian-agent/guardian-agent"
+cask "1password"
 cask "1password-cli"
 cask "android-file-transfer"
 cask "android-studio"
@@ -188,3 +189,5 @@ mas "Tweetbot", id: 1384080005
 mas "Wavelength", id: 1584865627
 mas "WireGuard", id: 1451685025
 mas "zPerf", id: 483498361
+vscode "anthropic.claude-code"
+vscode "github.copilot-chat"
