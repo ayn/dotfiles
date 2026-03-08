@@ -82,6 +82,7 @@ brew "pidof"
 brew "pinentry-mac"
 brew "pipx"
 brew "pkgconf"
+brew "pngquant"
 brew "postgresql@14"
 brew "pstree"
 brew "ruby-build"
@@ -119,6 +120,7 @@ cask "brave-browser"
 cask "chatgpt"
 cask "claude"
 cask "claude-code"
+cask "codex"
 cask "copilot-for-xcode"
 cask "dash"
 cask "discord"
@@ -186,7 +188,6 @@ mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
-mas "Messenger", id: 1480068668
 mas "Noir", id: 1592917505
 mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
