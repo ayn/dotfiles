@@ -120,7 +120,9 @@ cask "android-studio"
 cask "backblaze"
 cask "capcut"
 cask "chatgpt"
+cask "claude"
 cask "claude-code"
+cask "codex"
 cask "dash"
 cask "discord"
 cask "figma"
@@ -165,7 +167,6 @@ mas "iMovie", id: 408981434
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
-mas "Messenger", id: 1480068668
 mas "Noir", id: 1592917505
 mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
