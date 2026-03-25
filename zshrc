@@ -17,7 +17,7 @@ export NVM_LAZY_LOAD=true
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(1password chruby bundler gem git git-flow git-open github node macos pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
+plugins=(chruby bundler gem git git-flow git-open github node macos pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
 
 fpath=(~/.zsh/Completion $fpath)
 
@@ -48,7 +48,10 @@ if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
 fi
 
 # 1password completion
-eval "$(op completion zsh)"; compdef _op op
+if [[ -t 0 ]]; then
+  source $ZSH/plugins/1password/1password.plugin.zsh
+  eval "$(op completion zsh)"; compdef _op op
+fi
 
 # Created by `pipx` on 2024-06-28 19:51:59
 export PATH="$PATH:/Users/ayn/.local/bin"
