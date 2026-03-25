@@ -83,6 +83,7 @@ brew "pinentry-mac"
 brew "pipx"
 brew "pkgconf"
 brew "pngquant"
+brew "poppler"
 brew "postgresql@14"
 brew "pstree"
 brew "ruby-build"
@@ -155,6 +156,7 @@ cask "proxyman"
 cask "rar"
 cask "rectangle"
 cask "resilio-sync"
+cask "scratch"
 cask "session-manager-plugin"
 cask "signal"
 cask "signal@beta"
@@ -192,6 +194,7 @@ mas "Noir", id: 1592917505
 mas "NordVPN", id: 905953485
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
 mas "Paku", id: 1534130193
 mas "Pi-hole Remote", id: 1515445551
 mas "Pixelmator Pro", id: 1289583905
