@@ -17,7 +17,12 @@ export NVM_LAZY_LOAD=true
 # export DISABLE_LS_COLORS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(chruby bundler gem git git-flow git-open github node macos pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
+plugins=(chruby bundler gem git git-flow github node macos pow ruby vi-mode mosh gpg-agent tmux golang nvm) # ssh-agent)
+
+# Only load git-open as plugin on macOS
+if [[ "$OSTYPE" == darwin* ]]; then
+  plugins+=(git-open)
+fi
 
 fpath=(~/.zsh/Completion $fpath)
 
@@ -50,8 +55,7 @@ if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
 fi
 
 # 1password completion
-<<<<<<< HEAD
-if [[ -t 0 ]]; then
+if [[ "$OSTYPE" == darwin* ]] && command -v op &>/dev/null && [[ -t 0 ]]; then
   source $ZSH/plugins/1password/1password.plugin.zsh
   eval "$(op completion zsh)"; compdef _op op
 fi
