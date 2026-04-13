@@ -89,5 +89,6 @@ function seecert () {
 define_vim_wrappers
 
 #export SSL_CERT_FILE=/usr/local/etc/openssl/certs/cert.pem
+export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 # source /usr/local/lib/sga-env.sh

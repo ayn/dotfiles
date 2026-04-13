@@ -41,21 +41,33 @@ fi
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
 
-export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+fi
 
 if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
   . "/Users/ayn/.acme.sh/acme.sh.env"
 fi
 
 # 1password completion
+<<<<<<< HEAD
 if [[ -t 0 ]]; then
   source $ZSH/plugins/1password/1password.plugin.zsh
   eval "$(op completion zsh)"; compdef _op op
 fi
 
-# Created by `pipx` on 2024-06-28 19:51:59
 export PATH="$PATH:/Users/ayn/.local/bin"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# Fix SSH agent in tmux — find the REAL socket
+if [ -n "$SSH_AUTH_SOCK" ]; then
+    # Resolve through any symlink chain to the real socket
+    real_sock=$(readlink -f "$SSH_AUTH_SOCK")
+    if [ -S "$real_sock" ] && [ "$real_sock" != "$HOME/.ssh/auth_sock" ]; then
+        ln -sf "$real_sock" "$HOME/.ssh/auth_sock"
+    fi
+    export SSH_AUTH_SOCK="$HOME/.ssh/auth_sock"
+fi
