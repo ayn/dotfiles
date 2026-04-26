@@ -46,9 +46,9 @@ fi
 source $ZSH/oh-my-zsh.sh
 unsetopt auto_name_dirs
 
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
-fi
+# if [[ "$OSTYPE" == "darwin"* ]]; then
+#   export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+# fi
 
 if [[ -f "/Users/ayn/.acme.sh/acme.sh.env" ]]; then
   . "/Users/ayn/.acme.sh/acme.sh.env"
