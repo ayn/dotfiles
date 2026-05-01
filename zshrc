@@ -67,12 +67,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-# Fix SSH agent in tmux — find the REAL socket
-if [ -n "$SSH_AUTH_SOCK" ]; then
-    # Resolve through any symlink chain to the real socket
-    real_sock=$(readlink -f "$SSH_AUTH_SOCK")
-    if [ -S "$real_sock" ] && [ "$real_sock" != "$HOME/.ssh/auth_sock" ]; then
-        ln -sf "$real_sock" "$HOME/.ssh/auth_sock"
-    fi
-    export SSH_AUTH_SOCK="$HOME/.ssh/auth_sock"
+# Keep SSH agent forwarding usable across long-lived tmux sessions.
+#
+# On SSH login, SSH_AUTH_SOCK points at a per-session forwarded-agent socket.
+# Tmux panes can outlive that session, so point them at a stable symlink and
+# refresh the symlink whenever a new login shell sees a real forwarded socket.
+if [[ -n "$SSH_AUTH_SOCK" ]]; then
+  stable_ssh_auth_sock="$HOME/.ssh/auth_sock"
+  mkdir -p "$HOME/.ssh"
+
+  if [[ "$SSH_AUTH_SOCK" != "$stable_ssh_auth_sock" && -S "$SSH_AUTH_SOCK" ]]; then
+    ln -sfn "$SSH_AUTH_SOCK" "$stable_ssh_auth_sock"
+  fi
+
+  export SSH_AUTH_SOCK="$stable_ssh_auth_sock"
+  unset stable_ssh_auth_sock
 fi

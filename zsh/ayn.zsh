@@ -47,16 +47,6 @@ itb_prod() {
   ssh -oStrictHostKeyChecking=accept-new -oUserKnownHostsFile=/dev/null -Jitb-bastion $private_dns_name -lubuntu
 }
 
-# Predictable SSH authentication socket location.
-SOCK="/tmp/ssh-agent-$USER-screen"
-
-if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
-then
-    rm -f /tmp/ssh-agent-$USER-screen
-    ln -sf $SSH_AUTH_SOCK $SOCK
-    export SSH_AUTH_SOCK=$SOCK
-fi
-
 # Search backwards and forwards with a pattern
 bindkey -v
 bindkey -M vicmd '?' history-incremental-pattern-search-backward
