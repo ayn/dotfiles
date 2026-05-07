@@ -83,3 +83,6 @@ if [[ -n "$SSH_AUTH_SOCK" ]]; then
   export SSH_AUTH_SOCK="$stable_ssh_auth_sock"
   unset stable_ssh_auth_sock
 fi
+
+# Lightmist GitHub CLI token
+[ -f "$HOME/.config/lightmist/gh-env" ] && . "$HOME/.config/lightmist/gh-env"
