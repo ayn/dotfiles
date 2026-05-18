@@ -72,17 +72,27 @@ export NVM_DIR="$HOME/.nvm"
 # On SSH login, SSH_AUTH_SOCK points at a per-session forwarded-agent socket.
 # Tmux panes can outlive that session, so point them at a stable symlink and
 # refresh the symlink whenever a new login shell sees a real forwarded socket.
-if [[ -n "$SSH_AUTH_SOCK" ]]; then
-  stable_ssh_auth_sock="$HOME/.ssh/auth_sock"
-  mkdir -p "$HOME/.ssh"
+#
+# In local shells on this Mac, prefer 1Password's SSH agent. Otherwise commands
+# that read SSH_AUTH_SOCK directly can end up talking to macOS's empty agent.
+onepassword_ssh_auth_sock="$HOME/.1password/agent.sock"
+stable_ssh_auth_sock="$HOME/.ssh/auth_sock"
 
-  if [[ "$SSH_AUTH_SOCK" != "$stable_ssh_auth_sock" && -S "$SSH_AUTH_SOCK" ]]; then
-    ln -sfn "$SSH_AUTH_SOCK" "$stable_ssh_auth_sock"
+if [[ -n "$SSH_CONNECTION" || -n "$SSH_CLIENT" ]]; then
+  if [[ -n "$SSH_AUTH_SOCK" ]]; then
+    mkdir -p "$HOME/.ssh"
+
+    if [[ "$SSH_AUTH_SOCK" != "$stable_ssh_auth_sock" && -S "$SSH_AUTH_SOCK" ]]; then
+      ln -sfn "$SSH_AUTH_SOCK" "$stable_ssh_auth_sock"
+    fi
+
+    export SSH_AUTH_SOCK="$stable_ssh_auth_sock"
   fi
-
-  export SSH_AUTH_SOCK="$stable_ssh_auth_sock"
-  unset stable_ssh_auth_sock
+elif [[ -S "$onepassword_ssh_auth_sock" ]]; then
+  export SSH_AUTH_SOCK="$onepassword_ssh_auth_sock"
 fi
+
+unset onepassword_ssh_auth_sock stable_ssh_auth_sock
 
 # Lightmist GitHub CLI token
 [ -f "$HOME/.config/lightmist/gh-env" ] && . "$HOME/.config/lightmist/gh-env"
