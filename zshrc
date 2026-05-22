@@ -96,3 +96,8 @@ unset onepassword_ssh_auth_sock stable_ssh_auth_sock
 
 # Lightmist GitHub CLI token
 [ -f "$HOME/.config/lightmist/gh-env" ] && . "$HOME/.config/lightmist/gh-env"
+
+# Starship prompt
+if command -v starship >/dev/null 2>&1; then
+  eval "$(starship init zsh)"
+fi
