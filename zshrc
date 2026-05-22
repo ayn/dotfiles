@@ -89,7 +89,9 @@ if [[ -n "$SSH_CONNECTION" || -n "$SSH_CLIENT" ]]; then
     export SSH_AUTH_SOCK="$stable_ssh_auth_sock"
   fi
 elif [[ -S "$onepassword_ssh_auth_sock" ]]; then
-  export SSH_AUTH_SOCK="$onepassword_ssh_auth_sock"
+  mkdir -p "$HOME/.ssh"
+  ln -sfn "$onepassword_ssh_auth_sock" "$stable_ssh_auth_sock"
+  export SSH_AUTH_SOCK="$stable_ssh_auth_sock"
 fi
 
 unset onepassword_ssh_auth_sock stable_ssh_auth_sock
