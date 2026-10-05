@@ -103,3 +103,6 @@ unset onepassword_ssh_auth_sock stable_ssh_auth_sock
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init zsh)"
 fi
+
+export HOMEBREW_ARTIFACT_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
+export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
