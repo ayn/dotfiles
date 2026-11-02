@@ -72,3 +72,26 @@ There are several features enabled in Ruby's irb including history and
 completion. Many convenience methods are added as well such as "ri"
 which can be used to get inline documentation in IRB. See irbrc and
 railsrc files for details.
+
+== iTerm2 word deletion
+
+Set Option-Backspace to send Ctrl-W (hex 0x17), which deletes the previous
+word in Codex and typical shells, including through tmux and devcontainers:
+
+  bash ~/.dotfiles/bin/setup-iterm2-word-delete
+
+The script updates only that key mapping in the Default profile. Pass a
+different profile name as an argument if needed. Other key mappings and
+Option-key settings are preserved. A previous binding is backed up locally
+under ~/Library/Application Support/dotfiles/backups; full iTerm2 preferences
+are not stored in this repository.
+
+Quit iTerm2 fully with Cmd-Q and reopen it for existing sessions to pick up
+the saved mapping. tmux stays running; reconnect with +tmux attach+.
+
+Check the saved mapping without changing preferences:
+
+  bash ~/.dotfiles/bin/setup-iterm2-word-delete --check
+
+This applies to iTerm2, not VS Code's integrated terminal. Custom iTerm2
+preference-folder setups and dynamic profiles are not managed by this script.

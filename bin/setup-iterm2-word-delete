@@ -1,0 +1,48 @@
+#!/bin/bash
+set -eu
+
+if [[ "$(uname -s)" != Darwin ]]; then
+  echo 'This setup script requires macOS.' >&2
+  exit 1
+fi
+
+exec /usr/bin/osascript -l JavaScript - "$@" <<'JXA'
+ObjC.import('Foundation');
+
+function run(args) {
+    var check = args.indexOf('--check') !== -1;
+    var names = args.filter(function (arg) { return arg !== '--check'; });
+    if (names.length > 1) throw new Error('Usage: setup-iterm2-word-delete [--check] [profile-name]');
+    var name = names[0] || 'Default';
+    var defaults = $.NSUserDefaults.alloc.initWithSuiteName('com.googlecode.iterm2');
+    var profiles = ObjC.deepUnwrap(defaults.objectForKey('New Bookmarks'));
+    if (!profiles || !profiles.length) throw new Error('Open iTerm2 once to create a profile first.');
+    var matches = profiles.filter(function (profile) { return profile.Name === name; });
+    if (matches.length !== 1) throw new Error('Expected exactly one profile named: ' + name);
+    var profile = matches[0];
+    var key = '0x7f-0x80000';
+    var mapping = profile['Keyboard Map'] || {};
+    var before = mapping[key];
+    if (before && before.Action === 11 && before.Text === '0x17') {
+        return 'Already configured: ' + name + ': Option-Backspace sends Ctrl-W (0x17).';
+    }
+    if (check) throw new Error('Not configured: ' + name + ': Option-Backspace does not send Ctrl-W.');
+
+    // Back up just this binding locally, not the full preferences or any credentials.
+    var directory = ObjC.unwrap($.NSHomeDirectory()) + '/Library/Application Support/dotfiles/backups';
+    var error = Ref();
+    if (!$.NSFileManager.defaultManager.createDirectoryAtPathWithIntermediateDirectoriesAttributesError(
+        $(directory), true, null, error)) throw new Error('Could not create backup directory.');
+    var backup = directory + '/iterm2-word-delete-' + Date.now() + '.json';
+    var record = {profile: name, guid: profile.Guid, key: key, previous: before || null};
+    if (!$(JSON.stringify(record, null, 2)).writeToFileAtomicallyEncodingError(
+        $(backup), true, $.NSUTF8StringEncoding, error)) throw new Error('Could not save backup.');
+
+    mapping[key] = {Action: 11, Text: '0x17'};
+    profile['Keyboard Map'] = mapping;
+    defaults.setObjectForKey($(profiles), 'New Bookmarks');
+    if (!defaults.synchronize) throw new Error('Could not save iTerm2 preferences.');
+    return 'Configured ' + name + ': Option-Backspace sends Ctrl-W (0x17).\n'
+        + 'Quit and reopen iTerm2, then reconnect with tmux attach.\nBackup: ' + backup;
+}
+JXA
