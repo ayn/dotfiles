@@ -1,0 +1,427 @@
+tap "bugsnag/tap"
+tap "domt4/autoupdate"
+tap "hamed-elfayome/claude-usage"
+tap "heroku/brew"
+tap "homebrew/autoupdate", "https://github.com/DomT4/homebrew-autoupdate.git"
+tap "jorgelbg/tap"
+tap "kkevinm/itunes-discord-rp"
+tap "steipete/tap"
+tap "teamookla/speedtest"
+tap "theseal/guardian-agent"
+tap "theseal/ssh-askpass"
+# Search tool like grep, but optimized for programmers
+brew "ack"
+# Mozilla CA bundle for Python
+brew "certifi"
+# GNU multiple precision arithmetic library
+brew "gmp"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# YAML Parser
+brew "libyaml"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Library for command-line editing
+brew "readline"
+# AI pair programming in your terminal
+brew "aider"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Arbitrary precision numeric processing language
+brew "bc"
+# Implementation of the DNS protocols
+brew "bind"
+# Parser generator
+brew "bison"
+# Get/set bluetooth power and discoverable state
+brew "blueutil"
+# Fish completion for brew-cask
+brew "brew-cask-completion"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Decentralized dependency manager for Cocoa
+brew "carthage"
+# Ruby environment tool
+brew "chruby", args: ["HEAD"]
+# Command-line tool for Amazon Route 53
+brew "cli53"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima", restart_service: :changed
+# Color-highlighted diff(1) output
+brew "colordiff"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
+# Reimplementation of ctags(1)
+brew "ctags"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Pack, ship and run any application as a lightweight container
+brew "docker", link: false
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Command-line tool for DigitalOcean
+brew "doctl"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line tools for fly.io services
+brew "flyctl"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Command-line downloader for image-hosting site galleries and collections
+brew "gallery-dl"
+# New file format for still image compression
+brew "jpeg-xl"
+# Library for encoding and decoding .avif files
+brew "libavif"
+# GNU database manager
+brew "gdbm"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
+brew "git-lfs"
+# Open GitHub webpages from a terminal
+brew "git-open"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Terminal based graphical activity monitor inspired by gtop and vtop
+brew "gotop"
+# Command-line interface to libgphoto2
+brew "gphoto2"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# Command-line utility for Home Assistant
+brew "homeassistant-cli"
+# Improved top (interactive process viewer)
+brew "htop"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# IRC and ICB client
+brew "ircii"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Image processing and image analysis library
+brew "leptonica"
+# Portable Foreign Function Interface library
+brew "libffi"
+# International domain name library
+brew "libidn"
+# Postgres C API library
+brew "libpq"
+# GUI for vim, made for macOS
+brew "macvim"
+# Mac App Store command-line interface
+brew "mas"
+# Dependency manager that installs and runs Swift command-line tool packages
+brew "mint"
+# Remote terminal application
+brew "mosh"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
+# Open source relational database management system
+brew "mysql-client"
+# Image manipulation
+brew "netpbm"
+# Port scanning utility for large networks
+brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Manage multiple Node.js versions
+brew "nvm"
+# Binary newsgrabber for nzb files
+brew "nzbget", restart_service: :changed
+# Tools for one-time password authentication systems
+brew "oath-toolkit"
+# 7-Zip (high compression file archiver) implementation
+brew "p7zip"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Display the PID number for a given process name
+brew "pidof"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Optimizer for PNG files
+brew "pngcrush"
+# PNG image optimizing utility
+brew "pngquant"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Object-relational database system
+brew "postgresql@14"
+# Show ps output as a tree
+brew "pstree"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
+# CLI proxy to minimize LLM token consumption
+brew "rtk"
+# Install various Ruby versions and implementations
+brew "ruby-build"
+# Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
+brew "ruby-install"
+# Safe, concurrent, practical language
+brew "rust"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# SMART hard drive monitoring
+brew "smartmontools"
+# SOcket CAT: netcat on steroids
+brew "socat"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli", link: false
+# Add a public key to a remote machine's authorized_keys file
+brew "ssh-copy-id", link: true
+# Non-interactive SSH password auth
+brew "sshpass"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Version control system designed to be a better CVS
+brew "subversion"
+# Tool to enforce Swift style and conventions
+brew "swiftlint"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
+# Terminal multiplexer
+brew "tmux"
+# Utility to track your highest uptimes
+brew "uptimed", restart_service: :changed
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Extensible IRC client
+brew "weechat"
+# Internet file retriever
+brew "wget"
+# Little beautifier tool for xcodebuild
+brew "xcbeautify"
+# JavaScript package manager
+brew "yarn"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Ookla Speedtest
+brew "teamookla/speedtest/speedtest", trusted: true
+# Command-line interface for 1Password
+cask "1password-cli"
+# Password manager
+cask "1password@beta"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+# Tool to stream videos to Apple devices
+cask "air-video-server-hd"
+# AirPods companion app
+cask "airbuddy"
+# Application launcher and productivity software
+cask "alfred"
+# Transfer files from and to an Android smartphone
+cask "android-file-transfer"
+# Tools for building Android applications
+cask "android-studio"
+# Chromium based browser
+cask "arc"
+# Data backup and storage service
+cask "backblaze"
+# Web browser focusing on privacy
+cask "brave-browser"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# OpenAI's Codex desktop app for managing coding agents
+cask "codex-app"
+# Menu bar usage monitor for Codex and Claude
+cask "steipete/tap/codexbar", trusted: true
+# Xcode extension for GitHub Copilot
+cask "copilot-for-xcode"
+# API documentation browser and code snippet manager
+cask "dash"
+# Voice and text chat software
+cask "discord"
+# System-wide audio equaliser
+cask "eqmac"
+# Collaborative team software
+cask "figma"
+# Web browser
+cask "firefox"
+cask "font-anonymice-nerd-font"
+cask "font-anonymous-pro"
+cask "font-caskaydia-cove-nerd-font"
+cask "font-commit-mono-nerd-font"
+cask "font-fira-code"
+cask "font-hack"
+cask "font-hack-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-meslo-lg"
+cask "font-meslo-lg-nerd-font"
+# Update maps and software, sync with Garmin Connect and register your device
+cask "garmin-express"
+# Desktop client for GitHub repositories
+cask "github"
+# Web browser
+cask "google-chrome"
+# Free and open-source media player
+cask "iina"
+# Vector graphics editor
+cask "inkscape"
+# System monitoring app
+cask "istat-menus"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# File archiver
+cask "keka"
+# Wallet desktop application to maintain multiple cryptocurrencies
+cask "ledger-wallet"
+# Syncs files between computers and MEGA Cloud drives
+cask "megasync"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
+# Open source implementation of Microsoft's .NET Framework
+cask "mono-mdk"
+# Silence embarrassing notifications while screensharing
+cask "muzzle"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# App to write, plan, collaborate, and get organised
+cask "notion"
+# Professional webcam software for the Opal C1
+cask "opal-composer"
+# Whisper dictation/transcription app
+cask "opensuperwhisper"
+# WebKit based web browser
+cask "orion"
+# Pi-hole(s) management in the menu bar
+cask "pibar"
+# Home media server
+cask "plex-media-server"
+# Collaboration platform for API development
+cask "postman"
+# HTTP debugging proxy
+cask "proxyman"
+# Archive manager for data compression and backups
+cask "rar"
+# Imaging utility to install operating systems to a microSD card
+cask "raspberry-pi-imager"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# File sync and share software
+cask "resilio-sync"
+# Programmes interactive stories, games, and animations
+cask "scratch"
+# Plugin for AWS CLI to start and end sessions that connect to managed instances
+cask "session-manager-plugin"
+# Instant messaging application focusing on security
+cask "signal"
+# Instant messaging application focusing on security
+cask "signal@beta"
+# Music streaming service
+cask "spotify"
+# Backup, recovery and cloning software
+cask "superduper"
+# Menu bar manager
+cask "thaw"
+# File transfer application
+cask "transmit"
+# Companion app for the Trezor hardware wallet
+cask "trezor-suite"
+# Virtual machines UI using QEMU
+cask "utm"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# Native desktop client for WhatsApp
+cask "whatsapp"
+# Install and switch between multiple versions of Xcode
+cask "xcodes-app"
+# Tools for measuring, inspecting & testing on-screen graphics and layouts
+cask "xscope"
+mas "1Password for Safari", id: 0
+mas "Apple Configurator", id: 1037126344
+mas "Auction Sniper for eBay", id: 608292802
+mas "AutoMounter", id: 1160435653
+mas "Bear", id: 1091189122
+mas "Blackmagic Disk Speed Test", id: 425264550
+mas "Capital One Shopping", id: 1477110326
+mas "Cardhop", id: 1290358394
+mas "Clic", id: 6451395577
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
+mas "DevCleaner", id: 1388020431
+mas "Draw Things", id: 6444050820
+mas "Eno From Capital One", id: 1590422864
+mas "Fantastical", id: 975937182
+mas "Flighty", id: 1358823008
+mas "GarageBand", id: 682658836
+mas "Ghostery – Privacy Ad Blocker", id: 1436953057
+mas "iMovie", id: 408981434
+mas "Ivory", id: 6444602274
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Noir", id: 1592917505
+mas "NordVPN", id: 905953485
+mas "Numbers", id: 409203825
+mas "Pages", id: 361309726
+mas "Pages", id: 409201541
+mas "Paku", id: 1534130193
+mas "Pi-hole Remote", id: 1515445551
+mas "Pixelmator Pro", id: 1289583905
+mas "Pocket", id: 568494494
+mas "Priime Styles", id: 1089627601
+mas "Rakuten Cash Back", id: 1451893560
+mas "Sequel Ace", id: 1518036000
+mas "Slack", id: 803453959
+mas "Soulver", id: 1508732804
+mas "Spark", id: 1176895641
+mas "Speedtest", id: 1153157709
+mas "Tailscale", id: 1475387142
+mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
+mas "The Camelizer", id: 1532579087
+mas "Things", id: 904280696
+mas "ToothFairy", id: 1191449274
+mas "Wavelength", id: 1584865627
+mas "zPerf", id: 483498361
+vscode "anthropic.claude-code"
+vscode "astro-build.astro-vscode"
+vscode "dbaeumer.vscode-eslint"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "orta.vscode-jest"
+vscode "ronnidc.nunjucks"
+uv "cyberdrop-dl-patched"
+uv "mcp-proxy"
+uv "ruff"
+npm "@devcontainers/cli"
+npm "corepack"
+npm "wrangler"
